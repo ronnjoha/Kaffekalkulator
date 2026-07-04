@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Arte della Dose - Calcolatore di Caffè</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#1c190f",
+                    "primary-fixed-dim": "#dec1b3",
+                    "surface-container-low": "#fff1e8",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#3c2a21",
+                    "surface-variant": "#f1dfd3",
+                    "on-tertiary-fixed": "#1e1c11",
+                    "on-primary-container": "#aa9084",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#494640",
+                    "secondary-fixed-dim": "#cbc6bd",
+                    "surface-container-highest": "#f1dfd3",
+                    "surface-dim": "#e8d7cb",
+                    "inverse-primary": "#dec1b3",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#e7e2d9",
+                    "tertiary-fixed": "#e9e2d1",
+                    "primary": "#25160e",
+                    "on-tertiary-fixed-variant": "#4a473a",
+                    "on-surface": "#221a13",
+                    "steam-white": "#FFFFFF",
+                    "crema-light": "#F5EFE6",
+                    "outline": "#81756f",
+                    "latte-surface": "#F9F7F2",
+                    "on-tertiary-container": "#9b9586",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#312e23",
+                    "on-primary-fixed": "#281810",
+                    "on-secondary-fixed": "#1d1b16",
+                    "basil-green": "#008C45",
+                    "surface-tint": "#705a4f",
+                    "tomato-red": "#CD212A",
+                    "tertiary-fixed-dim": "#ccc6b6",
+                    "surface-bright": "#fff8f5",
+                    "secondary": "#615e57",
+                    "background": "#fff8f5",
+                    "inverse-on-surface": "#ffeee1",
+                    "primary-fixed": "#fbdcce",
+                    "outline-variant": "#d3c3bd",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#e7e2d9",
+                    "on-primary-fixed-variant": "#574238",
+                    "inverse-surface": "#382f26",
+                    "on-error-container": "#93000a",
+                    "espresso-dark": "#3C2A21",
+                    "surface": "#fff8f5",
+                    "on-background": "#221a13",
+                    "surface-container-high": "#f7e5d9",
+                    "on-surface-variant": "#4f4540",
+                    "surface-container": "#fcebde",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#67645d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "gutter": "24px",
+                    "stack-md": "24px",
+                    "section-gap": "64px",
+                    "container-max": "800px",
+                    "base": "8px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Bodoni Moda"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-caps": ["Hanken Grotesk"],
+                    "display-hero": ["Bodoni Moda"],
+                    "caption": ["Hanken Grotesk"],
+                    "headline-md": ["Bodoni Moda"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-hero": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .active-chip { @apply bg-espresso-dark text-steam-white border-espresso-dark; }
+        .italian-accent { height: 3px; background: linear-gradient(to right, #008C45 33%, #FFFFFF 33%, #FFFFFF 66%, #CD212A 66%); }
+        .hero-card-shadow { box-shadow: 0 20px 40px -15px rgba(60, 42, 33, 0.2); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-background fixed top-0 w-full z-50 border-b-2 border-primary/10">
+<div class="flex justify-between items-center w-full px-margin-mobile py-4 max-w-container-max mx-auto">
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">L'Arte della Dose</h1>
+<button class="text-primary hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+<div class="italian-accent w-full opacity-60"></div>
+</header>
+<main class="pt-24 px-margin-mobile max-w-container-max mx-auto space-y-section-gap">
+<!-- Welcome / Intent -->
+<section class="text-center space-y-2">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Rapporto Ideale: 60g / 1L</p>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Trova la tua dose perfetta</h2>
+</section>
+<!-- Water Selection Section -->
+<section class="space-y-stack-md">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="water_drop">water_drop</span>
+<h3 class="font-headline-md text-headline-md text-primary">Volume dell'acqua</h3>
+</div>
+<!-- Chips Selection -->
+<div class="grid grid-cols-3 gap-3" id="water-chips-container">
+<button class="water-chip py-4 rounded-xl border border-outline-variant bg-steam-white font-label-caps text-label-caps text-primary hover:bg-latte-surface transition-all active:scale-95" onclick="calculateDose(0.25, this)">0.25L</button>
+<button class="water-chip py-4 rounded-xl border border-outline-variant bg-steam-white font-label-caps text-label-caps text-primary hover:bg-latte-surface transition-all active:scale-95 active-chip" onclick="calculateDose(0.5, this)">0.5L</button>
+<button class="water-chip py-4 rounded-xl border border-outline-variant bg-steam-white font-label-caps text-label-caps text-primary hover:bg-latte-surface transition-all active:scale-95" onclick="calculateDose(0.75, this)">0.75L</button>
+<button class="water-chip py-4 rounded-xl border border-outline-variant bg-steam-white font-label-caps text-label-caps text-primary hover:bg-latte-surface transition-all active:scale-95" onclick="calculateDose(1.0, this)">1.0L</button>
+<button class="water-chip py-4 rounded-xl border border-outline-variant bg-steam-white font-label-caps text-label-caps text-primary hover:bg-latte-surface transition-all active:scale-95" onclick="calculateDose(1.25, this)">1.25L</button>
+<button class="py-4 rounded-xl border border-outline-variant bg-steam-white font-label-caps text-label-caps text-primary italic">Custom</button>
+</div>
+</section>
+<!-- Result Hero Card -->
+<section class="relative">
+<div class="bg-espresso-dark text-crema-light p-10 rounded-[2rem] hero-card-shadow text-center relative overflow-hidden">
+<!-- Subtle Decorative Background -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" data-alt="A macro photograph of coffee bean textures and organic swirl patterns, rendered in a deep espresso and charcoal palette with high-key luxury lighting. The aesthetic is modern and sophisticated, evoking the premium quality of Italian coffee culture. Dark tones with subtle cream highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDr6wNJpbT4EcT-rz89YHwSyetC4Ks7dRPFCDMfaZPE8ktwhgGG9fKa1F5d7k3t8WzLokbksegm2bzoKfM4J61OIUJS0bixdNYuxW32UJiZlmpTX3AmcfFoXCnCjUYYw1zxP4bK2BxuBJGVRPPMD38Co7Vx8U_pasyUBXFytKm4ff6RQv_Utc3pdYlKAgE6Dp7808J1ltnK54gIM9fMKgykdT38ILW4NOw_DhhMHo9sJ_Wj6mpS0Hh6')"></div>
+<p class="font-label-caps text-label-caps text-on-primary-container mb-2 relative z-10">PESO DEI CHICCHI</p>
+<div class="flex flex-col items-center justify-center relative z-10">
+<span class="font-display-hero text-headline-lg-mobile text-steam-white transition-all duration-500" id="dose-result">30</span>
+<span class="font-headline-md text-on-primary-container italic">grammi di caffè</span>
+</div>
+<div class="mt-8 pt-6 border-t border-steam-white/10 relative z-10">
+<p class="font-caption text-caption text-on-primary-container">Basato su un rapporto 1:16.6</p>
+</div>
+</div>
+</section>
+<!-- Recommended Grind Section -->
+<section class="space-y-stack-md">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="settings_input_component">settings_input_component</span>
+<h3 class="font-headline-md text-headline-md text-primary">Anbefalt malingsgrad</h3>
+</div>
+<div class="bg-steam-white border border-outline-variant rounded-2xl p-6 flex items-center gap-6 shadow-sm">
+<div class="w-20 h-20 rounded-full flex items-center justify-center bg-latte-surface flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="grain">grain</span>
+</div>
+<div>
+<h4 class="font-headline-md text-primary">Middels (Medium)</h4>
+<p class="font-body-md text-on-surface-variant">Ideale per macchine da caffè a filtro e pour-over. Consistenza simile al sale da tavola.</p>
+</div>
+</div>
+</section>
+<!-- Flavor Impact Accordion/Grid -->
+<section class="space-y-stack-sm">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase px-2">Guida all'Estrazione</h3>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-latte-surface p-4 rounded-xl border-l-4 border-basil-green/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-basil-green mt-1" data-icon="arrow_upward">arrow_upward</span>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Gusto Troppo Acido?</p>
+<p class="font-caption text-caption text-on-surface-variant">Macina più fine per aumentare l'estrazione.</p>
+</div>
+</div>
+<div class="bg-latte-surface p-4 rounded-xl border-l-4 border-tomato-red/30 flex items-start gap-4">
+<span class="material-symbols-outlined text-tomato-red mt-1" data-icon="arrow_downward">arrow_downward</span>
+<div>
+<p class="font-label-caps text-label-caps text-primary">Gusto Troppo Amaro?</p>
+<p class="font-caption text-caption text-on-surface-variant">Macina più grosso per ridurre l'estrazione.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-steam-white/80 backdrop-blur-md flex justify-around items-center px-4 pb-6 pt-2 shadow-lg rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-primary bg-primary-fixed rounded-full px-4 py-1 active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="calculate" style="font-variation-settings: 'FILL' 1;">calculate</span>
+<span class="font-label-caps text-label-caps">Calculator</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary px-4 py-1 hover:text-primary active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-caps text-label-caps">Guides</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary px-4 py-1 hover:text-primary active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-label-caps text-label-caps">History</span>
+</a>
+</nav>
+<script>
+        function calculateDose(liters, element) {
+            // Update active state
+            document.querySelectorAll('.water-chip').forEach(chip => {
+                chip.classList.remove('active-chip');
+            });
+            element.classList.add('active-chip');
+
+            // Calculation Logic: 60g per 1 Liter
+            const dose = Math.round(liters * 60);
+            const resultElement = document.getElementById('dose-result');
+            
+            // Animation for the result
+            resultElement.style.transform = 'scale(0.8)';
+            resultElement.style.opacity = '0';
+            
+            setTimeout(() => {
+                resultElement.textContent = dose;
+                resultElement.style.transform = 'scale(1)';
+                resultElement.style.opacity = '1';
+            }, 150);
+        }
+
+        // Initialize with default 0.5L
+        window.onload = () => {
+            const defaultChip = document.querySelector('.active-chip');
+            if(defaultChip) calculateDose(0.5, defaultChip);
+        };
+    </script>
+</body></html>

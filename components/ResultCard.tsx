@@ -1,5 +1,4 @@
 import { GRAMS_PER_LITER } from "@/lib/coffee";
-import { EspressoCup } from "@/components/illustrations";
 
 type Props = {
   grams: number;
@@ -9,26 +8,27 @@ export default function ResultCard({ grams }: Props) {
   return (
     <section
       aria-live="polite"
-      className="rounded-3xl bg-accent-strong px-6 py-8 text-center shadow-md"
+      className="hero-shadow rounded-2xl border border-transparent bg-hero px-6 py-12 text-center dark:border-border-soft"
     >
-      <EspressoCup className="mx-auto h-14 w-16 text-accent-foreground/80" />
-      <p className="mt-3 font-display text-sm italic text-accent-foreground/70">
-        La dose perfetta
-      </p>
-      <p className="mt-2 text-sm font-medium text-accent-foreground/70">
-        Vei opp
+      <p className="text-xs font-semibold uppercase tracking-[0.15em] text-hero-foreground/70">
+        Anbefalt kaffemengde
       </p>
       <p
         key={grams}
-        className="animate-pour-in my-1 font-display text-6xl font-semibold text-accent-foreground"
+        className="animate-pour-in mt-3 font-display text-7xl font-bold text-hero-foreground"
       >
         {grams}
-        <span className="ml-1 text-2xl font-normal">gram</span>
+        <span className="ml-2 font-display text-3xl font-normal italic">g</span>
       </p>
-      <p className="text-lg text-accent-foreground">kaffebønner</p>
-      <p className="mt-4 text-xs text-accent-foreground/60">
-        {GRAMS_PER_LITER} g kaffe per liter vann — basert på SCA Golden Cup
-        (55 g/L ± 10 %) og Norsk Kaffeinformasjon (60–70 g/L)
+      <p className="mt-3 font-display text-lg italic text-hero-foreground/90">
+        Vei opp {grams} gram kaffebønner
+      </p>
+      <div aria-hidden className="mx-auto mt-6 h-px w-2/3 bg-hero-foreground/15" />
+      <p className="mt-5 text-sm text-hero-foreground/70">
+        Basert på et forhold på {GRAMS_PER_LITER} g per liter vann.
+      </p>
+      <p className="mt-1.5 text-xs text-hero-foreground/50">
+        SCA Golden Cup (55 g/L ± 10 %) · Norsk Kaffeinformasjon (60–70 g/L)
       </p>
     </section>
   );

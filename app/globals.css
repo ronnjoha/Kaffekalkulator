@@ -1,16 +1,37 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  /* Lys latte-palett */
-  --background: #f5eee2;
-  --surface: #fffdf8;
-  --surface-muted: #f0e6d4;
-  --border: #e3d5bd;
-  --foreground: #2b1d12;
-  --muted: #6f5c48;
-  --accent: #6f4e37;
-  --accent-strong: #4a3323;
-  --accent-foreground: #fdf8ef;
+  /* L'Arte della Dose — lys (crema/latte) */
+  --background: #fff8f5;
+  --surface: #ffffff;
+  --surface-muted: #f7e5d9;
+  --border: #d3c3bd;
+  --foreground: #221a13;
+  --muted: #4f4540;
+  --hero: #3c2a21;
+  --hero-foreground: #f5efe6;
+  --accent: #3c2a21;
+  --accent-foreground: #ffffff;
+  --basil: #008c45;
+  --tomato: #cd212a;
+}
+
+.dark {
+  /* L'Arte della Dose — mørk (espresso) */
+  --background: #1a120b;
+  --surface: #271e16;
+  --surface-muted: #322820;
+  --border: #4e453f;
+  --foreground: #f1dfd3;
+  --muted: #d2c4bc;
+  --hero: #271e16;
+  --hero-foreground: #f2d9ca;
+  --accent: #f1dfd3;
+  --accent-foreground: #3c2d23;
+  --basil: #4fbf7e;
+  --tomato: #ff8a80;
 }
 
 @theme inline {
@@ -20,11 +41,14 @@
   --color-border-soft: var(--border);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-hero: var(--hero);
+  --color-hero-foreground: var(--hero-foreground);
   --color-accent: var(--accent);
-  --color-accent-strong: var(--accent-strong);
   --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-display: var(--font-fraunces);
+  --color-basil: var(--basil);
+  --color-tomato: var(--tomato);
+  --font-sans: var(--font-hanken-grotesk);
+  --font-display: var(--font-bodoni-moda);
 }
 
 body {
@@ -33,7 +57,7 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-/* Italiensk tricolore-stripe */
+/* Italiensk tricolore-aksent (3 px, jf. designsystemets .italian-accent) */
 .tricolore {
   background: linear-gradient(
     90deg,
@@ -43,27 +67,9 @@ body {
   );
 }
 
-/* Damp fra espressokoppen */
-@keyframes steam {
-  0% {
-    transform: translateY(3px);
-    opacity: 0;
-  }
-  35% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: translateY(-5px);
-    opacity: 0;
-  }
-}
-
-.animate-steam {
-  animation: steam 2.6s ease-in-out infinite;
-}
-
-.steam-delayed {
-  animation-delay: 1.3s;
+/* Myk, diffus skygge på hero-kortet (jf. designsystemets hero-card-shadow) */
+.hero-shadow {
+  box-shadow: 0 20px 40px -15px rgba(60, 42, 33, 0.2);
 }
 
 /* Myk inntoning når resultatet endres */
@@ -83,7 +89,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-steam,
   .animate-pour-in {
     animation: none;
   }

@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import { Bodoni_Moda, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const bodoniModa = Bodoni_Moda({
+  variable: "--font-bodoni-moda",
   subsets: ["latin"],
   style: ["normal", "italic"],
 });
 
+const hankenGrotesk = Hanken_Grotesk({
+  variable: "--font-hanken-grotesk",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Kaffekalkulator",
+  title: "L'Arte della Dose — Kaffekalkulator",
   description:
     "Velg vannmengde, så viser vi anbefalt mengde kaffebønner i gram — med anbefalt malingsgrad for filterkaffe.",
 };
+
+const themeInitScript = `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;if(d)document.documentElement.classList.add("dark")}catch(e){}})()`;
 
 export default function RootLayout({
   children,
@@ -27,8 +29,12 @@ export default function RootLayout({
   return (
     <html
       lang="nb"
-      className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${hankenGrotesk.variable} ${bodoniModa.variable} h-full antialiased`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
