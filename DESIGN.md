@@ -134,6 +134,7 @@ Systemet skal aldri minne om en kjedekafé-app. Det betyr ingen bonuskort-esteti
 - Bodoni Moda for tall og overskrifter, med kursiv som varm aksent.
 - Taktile, rolige flater med myke hjørner og stille skygger.
 - Tricolore bare som signatur (en 3 px stripe) og funksjonelt signal.
+- Kaffebønner som eneste illustrasjon: merket ved ordmerket og noen få bønner «sølt» på dosekortet.
 - Full lys og mørk modus (crema og notte) med de samme rollene.
 
 ## Colors
@@ -210,7 +211,7 @@ Hybrid: tonal lagdeling pluss stille, lave skygger. Hvite kort på crema-bakgrun
 
 Myke, rolige hjørner i to trinn og ett sirkulært. Kort og resultatkort har 16 px radius. Valgknapper og tipskort har 12 px radius. Ikonknapper, malingsikonet og skalaens håndtak er sirkulære. Kanter er 1 px cappuccino. Tipskortenes signal er ikonet i en 36 px sirkel tonet med 10 % basilico eller pomodoro. Kortene har ellers samme 1 px kant som alt annet. Inputfeltet har bare understrek. «Egen»-valgknappen har stiplet kant i inaktiv tilstand for å vise at den er åpen for egen verdi.
 
-Ikonene er egne SVG-er i strektegning (2 px strek, runde ender, `currentColor`, 20–24 px). Malingsgrad vises som prikker (fylte sirkler), fordi korn er runde.
+Ikonene er egne SVG-er i strektegning (2 px strek, runde ender, `currentColor`, 20–24 px). Malingsgrad vises som prikker (fylte sirkler), fordi korn er runde. Kaffebønnen er den ene fylte formen: en litt skjev, organisk oval med S-formet midtfure tegnet i flatens bakgrunnsfarge. Den er aldri en perfekt ellipse.
 
 ## Components
 
@@ -247,7 +248,14 @@ Signaturkomponenten. Espresso-flate (lys) eller notte-surface med kant (mørk), 
 En passiv skala (fin – medium – grov) under malingsgrad-teksten. Et 6 px latte-spor der venstre halvdel er fylt med ristretto på 60 %, og et 16 px ristretto-håndtak med schiuma-kant i midten. Etikettene står i Label under. Skalaen er dekorativ (`aria-hidden`), fordi teksten over sier det samme.
 
 ### Tricolore-stripen
-3 px høy, i full bredde, rett under headeren. Tre like store felt uten overgang: basilico, bianco tricolore og pomodoro. Den er systemets eneste rent dekorative element og finnes bare på dette ene stedet.
+3 px høy, i full bredde, rett under headeren. Tre like store felt uten overgang: basilico, bianco tricolore og pomodoro. Den finnes bare på dette ene stedet.
+
+### Chicchi (kaffebønnene)
+Systemets eneste illustrasjon, og den viser det brukeren faktisk veier opp. To bruksområder:
+- **Merket:** én bønne (24 px høy, rotert 24°, i foreground) foran ordmerket i headeren.
+- **Sølt på disken:** tre bønner i hjørnene på dosekortet, to oppe til høyre og én nede til venstre. De er delvis beskåret av kortkanten, i panna med 12 % opasitet, og ligger i et eget lag bak teksten (`isolate` + `-z-10`). Når dosen endres, legger de seg til ro: 5 px ned og 10° tilbake til hvilerotasjonen over 600 ms med eksponentiell ease-out. Animasjonen er av ved `prefers-reduced-motion`.
+
+**The Tre Chicchi Rule.** Bønnene brukes bare som merke og på dosekortet, aldri over tre på kortet og aldri over tekst. Flere bønner gjør disken til tapet.
 
 ## Do's and Don'ts
 
@@ -269,4 +277,5 @@ En passiv skala (fin – medium – grov) under malingsgrad-teksten. Et 6 px lat
 - **Don't** bryte opp enkolonne-layouten til sidekolonner eller kortrutenett på store skjermer.
 - **Don't** sette knapper, etiketter eller feilmeldinger i Bodoni.
 - **Don't** sette en overlinje over en overskrift (The Ingen Overlinje Rule).
+- **Don't** strø kaffebønner utenfor merket og dosekortet, eller legge dem over tekst (The Tre Chicchi Rule).
 - **Don't** gi kort en tykk farget venstre- eller høyrekant. Signalfarge bor i ikonet.

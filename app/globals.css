@@ -99,8 +99,24 @@ body {
   animation: pour-in 0.35s ease-out;
 }
 
+/* Bønnene på dosekortet legger seg til ro når dosen endres */
+@keyframes bean-settle {
+  from {
+    transform: translateY(-5px) rotate(calc(var(--r) - 10deg));
+  }
+  to {
+    transform: rotate(var(--r));
+  }
+}
+
+.animate-bean-settle {
+  transform: rotate(var(--r));
+  animation: bean-settle 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-pour-in {
+  .animate-pour-in,
+  .animate-bean-settle {
     animation: none;
   }
 }

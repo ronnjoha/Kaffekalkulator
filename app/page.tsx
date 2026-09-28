@@ -1,12 +1,14 @@
 import Calculator from "@/components/Calculator";
 import ThemeToggle from "@/components/ThemeToggle";
+import { Bean } from "@/components/illustrations";
 
 export default function Home() {
   return (
     <div className="flex-1">
       <header className="border-b border-border-soft/60">
         <div className="mx-auto flex w-full max-w-[800px] items-center justify-between px-4 py-3.5">
-          <p className="font-display text-2xl font-bold tracking-tight">
+          <p className="flex items-center gap-2.5 font-display text-2xl font-bold tracking-tight">
+            <Bean className="h-6 w-auto rotate-[24deg] text-foreground" />
             L&apos;Arte della Dose
           </p>
           <ThemeToggle />

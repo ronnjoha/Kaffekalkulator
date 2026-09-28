@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T09:01:04.287Z",
+  "generatedAt": "2026-09-28T10:56:30.325Z",
   "title": "Design System: L'Arte della Dose",
   "extensions": {
     "colorMeta": {
@@ -432,8 +432,8 @@
       "kind": "card",
       "refersTo": "card-dose",
       "description": "Signaturkomponenten: kaffedosen servert på espresso-flate.",
-      "html": "<section class=\"ds-dose\" aria-live=\"polite\"><p class=\"ds-dose-eyebrow\">Anbefalt kaffedose</p><p class=\"ds-dose-value\">30<span>g</span></p><p class=\"ds-dose-action\">Vei opp 30 gram kaffebønner</p><div class=\"ds-dose-rule\"></div><p class=\"ds-dose-basis\">Basert på 0,5 L vann og et forhold på 60 g per liter.</p><p class=\"ds-dose-source\">SCA Golden Cup (55 g/L ± 10 %) · Norsk Kaffeinformasjon (60–70 g/L)</p></section>",
-      "css": ".ds-dose { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; background: var(--hero, #3c2a21); color: var(--hero-foreground, #f5efe6); border-radius: 16px; padding: 48px 24px; text-align: center; box-shadow: 0 20px 40px -15px rgba(60, 42, 33, 0.2); } .ds-dose-eyebrow { margin: 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; } .ds-dose-value { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 12px 0 0; font-size: 4.5rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; animation: ds-pour-in 0.35s ease-out; } .ds-dose-value span { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin-left: 8px; font-size: 1.875rem; font-weight: 400; font-style: italic; } .ds-dose-action { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 12px 0 0; font-size: 1.125rem; font-style: italic; opacity: 0.9; } .ds-dose-rule { margin: 24px auto 0; width: 66%; height: 1px; background: currentColor; opacity: 0.15; } .ds-dose-basis { margin: 20px 0 0; font-size: 0.875rem; opacity: 0.7; } .ds-dose-source { margin: 6px 0 0; font-size: 0.75rem; opacity: 0.6; } @keyframes ds-pour-in { from { transform: translateY(6px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } @media (prefers-reduced-motion: reduce) { .ds-dose-value { animation: none; } }"
+      "html": "<section class=\"ds-dose\" aria-live=\"polite\"><div class=\"ds-dose-beans\" aria-hidden=\"true\"><svg aria-hidden=\"true\" viewBox=\"0 0 32 44\" width=\"64\" style=\"right:-12px;top:-20px;transform:rotate(28deg)\"><path fill=\"currentColor\" d=\"M16 1.5C25 1.5 30.8 10.5 30.2 22.5 29.6 34.5 23.8 42.6 15.6 42.5 7.2 42.4 1.4 33.6 1.8 21.6 2.2 9.8 7.8 1.5 16 1.5Z\"/><path fill=\"none\" stroke=\"var(--crease)\" stroke-width=\"2.2\" stroke-linecap=\"round\" d=\"M16.6 4C11.6 12 20.6 18.8 15.9 25.4 12.6 30 17.4 35.8 15.4 40.6\"/></svg><svg aria-hidden=\"true\" viewBox=\"0 0 32 44\" width=\"32\" style=\"right:48px;top:16px;transform:rotate(-22deg)\"><path fill=\"currentColor\" d=\"M16 1.5C25 1.5 30.8 10.5 30.2 22.5 29.6 34.5 23.8 42.6 15.6 42.5 7.2 42.4 1.4 33.6 1.8 21.6 2.2 9.8 7.8 1.5 16 1.5Z\"/><path fill=\"none\" stroke=\"var(--crease)\" stroke-width=\"2.2\" stroke-linecap=\"round\" d=\"M16.6 4C11.6 12 20.6 18.8 15.9 25.4 12.6 30 17.4 35.8 15.4 40.6\"/></svg><svg aria-hidden=\"true\" viewBox=\"0 0 32 44\" width=\"56\" style=\"left:-12px;bottom:-16px;transform:rotate(-38deg)\"><path fill=\"currentColor\" d=\"M16 1.5C25 1.5 30.8 10.5 30.2 22.5 29.6 34.5 23.8 42.6 15.6 42.5 7.2 42.4 1.4 33.6 1.8 21.6 2.2 9.8 7.8 1.5 16 1.5Z\"/><path fill=\"none\" stroke=\"var(--crease)\" stroke-width=\"2.2\" stroke-linecap=\"round\" d=\"M16.6 4C11.6 12 20.6 18.8 15.9 25.4 12.6 30 17.4 35.8 15.4 40.6\"/></svg></div><p class=\"ds-dose-eyebrow\">Anbefalt kaffedose</p><p class=\"ds-dose-value\">30<span>g</span></p><p class=\"ds-dose-action\">Vei opp 30 gram kaffebønner</p><div class=\"ds-dose-rule\"></div><p class=\"ds-dose-basis\">Basert på 0,5 L vann og et forhold på 60 g per liter.</p><p class=\"ds-dose-source\">SCA Golden Cup (55 g/L ± 10 %) · Norsk Kaffeinformasjon (60–70 g/L)</p></section>",
+      "css": ".ds-dose { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; background: var(--hero, #3c2a21); color: var(--hero-foreground, #f5efe6); border-radius: 16px; padding: 48px 24px; text-align: center; box-shadow: 0 20px 40px -15px rgba(60, 42, 33, 0.2); position: relative; isolation: isolate; overflow: hidden; --crease: var(--hero, #3c2a21); } .ds-dose-beans { position: absolute; inset: 0; z-index: -1; } .ds-dose-beans svg { position: absolute; height: auto; color: color-mix(in srgb, var(--hero-foreground, #f5efe6) 12%, transparent); } .ds-dose-eyebrow { margin: 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; } .ds-dose-value { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 12px 0 0; font-size: 4.5rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; animation: ds-pour-in 0.35s ease-out; } .ds-dose-value span { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin-left: 8px; font-size: 1.875rem; font-weight: 400; font-style: italic; } .ds-dose-action { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 12px 0 0; font-size: 1.125rem; font-style: italic; opacity: 0.9; } .ds-dose-rule { margin: 24px auto 0; width: 66%; height: 1px; background: currentColor; opacity: 0.15; } .ds-dose-basis { margin: 20px 0 0; font-size: 0.875rem; opacity: 0.7; } .ds-dose-source { margin: 6px 0 0; font-size: 0.75rem; opacity: 0.6; } @keyframes ds-pour-in { from { transform: translateY(6px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } @media (prefers-reduced-motion: reduce) { .ds-dose-value { animation: none; } }"
     },
     {
       "name": "Innholdskort",
@@ -472,8 +472,8 @@
       "kind": "nav",
       "refersTo": "header",
       "description": "Ordmerke, temaknapp og 3 px tricolore-stripe — systemets eneste dekor.",
-      "html": "<header class=\"ds-header\"><div class=\"ds-header-row\"><p class=\"ds-wordmark\">L'Arte della Dose</p><button class=\"ds-icon-btn\" aria-label=\"Bytt til mørkt tema\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z\"/></svg></button></div><div class=\"ds-tricolore\" aria-hidden=\"true\"></div></header>",
-      "css": ".ds-header { border-bottom: 1px solid color-mix(in srgb, var(--border, #d3c3bd) 60%, transparent); } .ds-header-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; } .ds-wordmark { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; color: var(--foreground, #221a13); } .ds-tricolore { height: 3px; background: linear-gradient(90deg, #008c45 0% 33.3%, #e6ddd0 33.3% 66.6%, #cd212a 66.6% 100%); } .ds-icon-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 9999px; background: transparent; color: var(--muted, #4f4540); cursor: pointer; transition: background-color 150ms cubic-bezier(0.4,0,0.2,1), color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-icon-btn:hover { background: var(--surface-muted, #f7e5d9); color: var(--foreground, #221a13); } .ds-icon-btn:focus-visible { outline: 2px solid var(--foreground, #221a13); outline-offset: 2px; }"
+      "html": "<header class=\"ds-header\"><div class=\"ds-header-row\"><p class=\"ds-wordmark\"><svg aria-hidden=\"true\" viewBox=\"0 0 32 44\" width=\"17\" style=\"transform:rotate(24deg)\"><path fill=\"currentColor\" d=\"M16 1.5C25 1.5 30.8 10.5 30.2 22.5 29.6 34.5 23.8 42.6 15.6 42.5 7.2 42.4 1.4 33.6 1.8 21.6 2.2 9.8 7.8 1.5 16 1.5Z\"/><path fill=\"none\" stroke=\"var(--crease)\" stroke-width=\"2.2\" stroke-linecap=\"round\" d=\"M16.6 4C11.6 12 20.6 18.8 15.9 25.4 12.6 30 17.4 35.8 15.4 40.6\"/></svg>L'Arte della Dose</p><button class=\"ds-icon-btn\" aria-label=\"Bytt til mørkt tema\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z\"/></svg></button></div><div class=\"ds-tricolore\" aria-hidden=\"true\"></div></header>",
+      "css": ".ds-header { border-bottom: 1px solid color-mix(in srgb, var(--border, #d3c3bd) 60%, transparent); } .ds-header-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; } .ds-wordmark { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; color: var(--foreground, #221a13); display: flex; align-items: center; gap: 10px; --crease: var(--background, #fff8f5); } .ds-tricolore { height: 3px; background: linear-gradient(90deg, #008c45 0% 33.3%, #e6ddd0 33.3% 66.6%, #cd212a 66.6% 100%); } .ds-icon-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 9999px; background: transparent; color: var(--muted, #4f4540); cursor: pointer; transition: background-color 150ms cubic-bezier(0.4,0,0.2,1), color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-icon-btn:hover { background: var(--surface-muted, #f7e5d9); color: var(--foreground, #221a13); } .ds-icon-btn:focus-visible { outline: 2px solid var(--foreground, #221a13); outline-offset: 2px; }"
     },
     {
       "name": "Malingsskala",
@@ -493,6 +493,7 @@
       "Bodoni Moda for tall og overskrifter, med kursiv som varm aksent.",
       "Taktile, rolige flater med myke hjørner og stille skygger.",
       "Tricolore bare som signatur (en 3 px stripe) og funksjonelt signal.",
+      "Kaffebønner som eneste illustrasjon: merket ved ordmerket og noen få bønner «sølt» på dosekortet.",
       "Full lys og mørk modus (crema og notte) med de samme rollene."
     ],
     "rules": [
@@ -530,6 +531,11 @@
         "name": "The Én Løftet Rule",
         "body": "Bare dosen får den dype skyggen. Alle andre flater ligger stille på disken.",
         "section": "elevation"
+      },
+      {
+        "name": "The Tre Chicchi Rule",
+        "body": "Bønnene brukes bare som merke og på dosekortet, aldri over tre på kortet og aldri over tekst. Flere bønner gjør disken til tapet.",
+        "section": "components"
       }
     ],
     "dos": [
@@ -550,6 +556,7 @@
       "Don't bryte opp enkolonne-layouten til sidekolonner eller kortrutenett på store skjermer.",
       "Don't sette knapper, etiketter eller feilmeldinger i Bodoni.",
       "Don't sette en overlinje over en overskrift (The Ingen Overlinje Rule).",
+      "Don't strø kaffebønner utenfor merket og dosekortet, eller legge dem over tekst (The Tre Chicchi Rule).",
       "Don't gi kort en tykk farget venstre- eller høyrekant. Signalfarge bor i ikonet."
     ]
   }
