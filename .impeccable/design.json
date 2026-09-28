@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T09:01:04.287Z",
+  "title": "Design System: L'Arte della Dose",
+  "extensions": {
+    "colorMeta": {
+      "espresso": {
+        "role": "primary",
+        "displayName": "Espresso",
+        "canonical": "#3c2a21",
+        "oklch": "oklch(30.4% 0.031 47.7)",
+        "tonalRamp": [
+          "oklch(15% 0.031 47.7)",
+          "oklch(26% 0.031 47.7)",
+          "oklch(37% 0.031 47.7)",
+          "oklch(48% 0.031 47.7)",
+          "oklch(59% 0.031 47.7)",
+          "oklch(70% 0.031 47.7)",
+          "oklch(82% 0.031 47.7)",
+          "oklch(95% 0.031 47.7)"
+        ]
+      },
+      "crema": {
+        "role": "neutral",
+        "displayName": "Crema",
+        "canonical": "#fff8f5",
+        "oklch": "oklch(98.4% 0.009 44.9)",
+        "tonalRamp": [
+          "oklch(15% 0.009 44.9)",
+          "oklch(26% 0.009 44.9)",
+          "oklch(37% 0.009 44.9)",
+          "oklch(48% 0.009 44.9)",
+          "oklch(59% 0.009 44.9)",
+          "oklch(70% 0.009 44.9)",
+          "oklch(82% 0.009 44.9)",
+          "oklch(95% 0.009 44.9)"
+        ]
+      },
+      "schiuma": {
+        "role": "neutral",
+        "displayName": "Schiuma",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(37% 0.000 89.9)",
+          "oklch(48% 0.000 89.9)",
+          "oklch(59% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(82% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "latte": {
+        "role": "neutral",
+        "displayName": "Latte",
+        "canonical": "#f7e5d9",
+        "oklch": "oklch(93.3% 0.025 56.1)",
+        "tonalRamp": [
+          "oklch(15% 0.025 56.1)",
+          "oklch(26% 0.025 56.1)",
+          "oklch(37% 0.025 56.1)",
+          "oklch(48% 0.025 56.1)",
+          "oklch(59% 0.025 56.1)",
+          "oklch(70% 0.025 56.1)",
+          "oklch(82% 0.025 56.1)",
+          "oklch(95% 0.025 56.1)"
+        ]
+      },
+      "cappuccino": {
+        "role": "neutral",
+        "displayName": "Cappuccino",
+        "canonical": "#d3c3bd",
+        "oklch": "oklch(82.9% 0.020 41.8)",
+        "tonalRamp": [
+          "oklch(15% 0.020 41.8)",
+          "oklch(26% 0.020 41.8)",
+          "oklch(37% 0.020 41.8)",
+          "oklch(48% 0.020 41.8)",
+          "oklch(59% 0.020 41.8)",
+          "oklch(70% 0.020 41.8)",
+          "oklch(82% 0.020 41.8)",
+          "oklch(95% 0.020 41.8)"
+        ]
+      },
+      "ristretto": {
+        "role": "neutral",
+        "displayName": "Ristretto",
+        "canonical": "#221a13",
+        "oklch": "oklch(22.5% 0.018 62.9)",
+        "tonalRamp": [
+          "oklch(15% 0.018 62.9)",
+          "oklch(26% 0.018 62.9)",
+          "oklch(37% 0.018 62.9)",
+          "oklch(48% 0.018 62.9)",
+          "oklch(59% 0.018 62.9)",
+          "oklch(70% 0.018 62.9)",
+          "oklch(82% 0.018 62.9)",
+          "oklch(95% 0.018 62.9)"
+        ]
+      },
+      "macchiato": {
+        "role": "neutral",
+        "displayName": "Macchiato",
+        "canonical": "#4f4540",
+        "oklch": "oklch(39.9% 0.016 48.3)",
+        "tonalRamp": [
+          "oklch(15% 0.016 48.3)",
+          "oklch(26% 0.016 48.3)",
+          "oklch(37% 0.016 48.3)",
+          "oklch(48% 0.016 48.3)",
+          "oklch(59% 0.016 48.3)",
+          "oklch(70% 0.016 48.3)",
+          "oklch(82% 0.016 48.3)",
+          "oklch(95% 0.016 48.3)"
+        ]
+      },
+      "panna": {
+        "role": "neutral",
+        "displayName": "Panna",
+        "canonical": "#f5efe6",
+        "oklch": "oklch(95.4% 0.014 78.3)",
+        "tonalRamp": [
+          "oklch(15% 0.014 78.3)",
+          "oklch(26% 0.014 78.3)",
+          "oklch(37% 0.014 78.3)",
+          "oklch(48% 0.014 78.3)",
+          "oklch(59% 0.014 78.3)",
+          "oklch(70% 0.014 78.3)",
+          "oklch(82% 0.014 78.3)",
+          "oklch(95% 0.014 78.3)"
+        ]
+      },
+      "basilico": {
+        "role": "secondary",
+        "displayName": "Basilico",
+        "canonical": "#008c45",
+        "oklch": "oklch(56.0% 0.148 151.7)",
+        "tonalRamp": [
+          "oklch(15% 0.148 151.7)",
+          "oklch(26% 0.148 151.7)",
+          "oklch(37% 0.148 151.7)",
+          "oklch(48% 0.148 151.7)",
+          "oklch(59% 0.148 151.7)",
+          "oklch(70% 0.148 151.7)",
+          "oklch(82% 0.148 151.7)",
+          "oklch(95% 0.148 151.7)"
+        ]
+      },
+      "pomodoro": {
+        "role": "tertiary",
+        "displayName": "Pomodoro",
+        "canonical": "#cd212a",
+        "oklch": "oklch(54.7% 0.204 25.4)",
+        "tonalRamp": [
+          "oklch(15% 0.180 25.4)",
+          "oklch(26% 0.180 25.4)",
+          "oklch(37% 0.180 25.4)",
+          "oklch(48% 0.180 25.4)",
+          "oklch(59% 0.180 25.4)",
+          "oklch(70% 0.180 25.4)",
+          "oklch(82% 0.180 25.4)",
+          "oklch(95% 0.180 25.4)"
+        ]
+      },
+      "bianco-tricolore": {
+        "role": "neutral",
+        "displayName": "Bianco tricolore",
+        "canonical": "#e6ddd0",
+        "oklch": "oklch(89.6% 0.015 75)",
+        "tonalRamp": [
+          "oklch(15% 0.015 75)",
+          "oklch(26% 0.015 75)",
+          "oklch(37% 0.015 75)",
+          "oklch(48% 0.015 75)",
+          "oklch(59% 0.015 75)",
+          "oklch(70% 0.015 75)",
+          "oklch(82% 0.015 75)",
+          "oklch(95% 0.015 75)"
+        ]
+      },
+      "notte-background": {
+        "role": "neutral",
+        "displayName": "Notte · bakgrunn",
+        "canonical": "#1a120b",
+        "oklch": "oklch(19.0% 0.019 62.5)",
+        "tonalRamp": [
+          "oklch(15% 0.019 62.5)",
+          "oklch(26% 0.019 62.5)",
+          "oklch(37% 0.019 62.5)",
+          "oklch(48% 0.019 62.5)",
+          "oklch(59% 0.019 62.5)",
+          "oklch(70% 0.019 62.5)",
+          "oklch(82% 0.019 62.5)",
+          "oklch(95% 0.019 62.5)"
+        ]
+      },
+      "notte-surface": {
+        "role": "neutral",
+        "displayName": "Notte · flate",
+        "canonical": "#271e16",
+        "oklch": "oklch(24.3% 0.020 63.3)",
+        "tonalRamp": [
+          "oklch(15% 0.020 63.3)",
+          "oklch(26% 0.020 63.3)",
+          "oklch(37% 0.020 63.3)",
+          "oklch(48% 0.020 63.3)",
+          "oklch(59% 0.020 63.3)",
+          "oklch(70% 0.020 63.3)",
+          "oklch(82% 0.020 63.3)",
+          "oklch(95% 0.020 63.3)"
+        ]
+      },
+      "notte-surface-muted": {
+        "role": "neutral",
+        "displayName": "Notte · dempet flate",
+        "canonical": "#322820",
+        "oklch": "oklch(28.6% 0.021 60.5)",
+        "tonalRamp": [
+          "oklch(15% 0.021 60.5)",
+          "oklch(26% 0.021 60.5)",
+          "oklch(37% 0.021 60.5)",
+          "oklch(48% 0.021 60.5)",
+          "oklch(59% 0.021 60.5)",
+          "oklch(70% 0.021 60.5)",
+          "oklch(82% 0.021 60.5)",
+          "oklch(95% 0.021 60.5)"
+        ]
+      },
+      "notte-border": {
+        "role": "neutral",
+        "displayName": "Notte · kant",
+        "canonical": "#4e453f",
+        "oklch": "oklch(39.8% 0.016 55.9)",
+        "tonalRamp": [
+          "oklch(15% 0.016 55.9)",
+          "oklch(26% 0.016 55.9)",
+          "oklch(37% 0.016 55.9)",
+          "oklch(48% 0.016 55.9)",
+          "oklch(59% 0.016 55.9)",
+          "oklch(70% 0.016 55.9)",
+          "oklch(82% 0.016 55.9)",
+          "oklch(95% 0.016 55.9)"
+        ]
+      },
+      "notte-foreground": {
+        "role": "neutral",
+        "displayName": "Notte · tekst",
+        "canonical": "#f1dfd3",
+        "oklch": "oklch(91.5% 0.026 56.0)",
+        "tonalRamp": [
+          "oklch(15% 0.026 56.0)",
+          "oklch(26% 0.026 56.0)",
+          "oklch(37% 0.026 56.0)",
+          "oklch(48% 0.026 56.0)",
+          "oklch(59% 0.026 56.0)",
+          "oklch(70% 0.026 56.0)",
+          "oklch(82% 0.026 56.0)",
+          "oklch(95% 0.026 56.0)"
+        ]
+      },
+      "notte-muted": {
+        "role": "neutral",
+        "displayName": "Notte · sekundærtekst",
+        "canonical": "#d2c4bc",
+        "oklch": "oklch(83.0% 0.019 51.9)",
+        "tonalRamp": [
+          "oklch(15% 0.019 51.9)",
+          "oklch(26% 0.019 51.9)",
+          "oklch(37% 0.019 51.9)",
+          "oklch(48% 0.019 51.9)",
+          "oklch(59% 0.019 51.9)",
+          "oklch(70% 0.019 51.9)",
+          "oklch(82% 0.019 51.9)",
+          "oklch(95% 0.019 51.9)"
+        ]
+      },
+      "notte-hero-foreground": {
+        "role": "neutral",
+        "displayName": "Notte · tekst på dosekort",
+        "canonical": "#f2d9ca",
+        "oklch": "oklch(90.2% 0.034 53.0)",
+        "tonalRamp": [
+          "oklch(15% 0.034 53.0)",
+          "oklch(26% 0.034 53.0)",
+          "oklch(37% 0.034 53.0)",
+          "oklch(48% 0.034 53.0)",
+          "oklch(59% 0.034 53.0)",
+          "oklch(70% 0.034 53.0)",
+          "oklch(82% 0.034 53.0)",
+          "oklch(95% 0.034 53.0)"
+        ]
+      },
+      "notte-accent-foreground": {
+        "role": "neutral",
+        "displayName": "Notte · tekst på aktiv flis",
+        "canonical": "#3c2d23",
+        "oklch": "oklch(31.1% 0.028 55.1)",
+        "tonalRamp": [
+          "oklch(15% 0.028 55.1)",
+          "oklch(26% 0.028 55.1)",
+          "oklch(37% 0.028 55.1)",
+          "oklch(48% 0.028 55.1)",
+          "oklch(59% 0.028 55.1)",
+          "oklch(70% 0.028 55.1)",
+          "oklch(82% 0.028 55.1)",
+          "oklch(95% 0.028 55.1)"
+        ]
+      },
+      "notte-basilico": {
+        "role": "secondary",
+        "displayName": "Notte · basilico",
+        "canonical": "#4fbf7e",
+        "oklch": "oklch(72.3% 0.140 155.0)",
+        "tonalRamp": [
+          "oklch(15% 0.140 155.0)",
+          "oklch(26% 0.140 155.0)",
+          "oklch(37% 0.140 155.0)",
+          "oklch(48% 0.140 155.0)",
+          "oklch(59% 0.140 155.0)",
+          "oklch(70% 0.140 155.0)",
+          "oklch(82% 0.140 155.0)",
+          "oklch(95% 0.140 155.0)"
+        ]
+      },
+      "notte-pomodoro": {
+        "role": "tertiary",
+        "displayName": "Notte · pomodoro",
+        "canonical": "#ff8a80",
+        "oklch": "oklch(75.9% 0.144 26.1)",
+        "tonalRamp": [
+          "oklch(15% 0.144 26.1)",
+          "oklch(26% 0.144 26.1)",
+          "oklch(37% 0.144 26.1)",
+          "oklch(48% 0.144 26.1)",
+          "oklch(59% 0.144 26.1)",
+          "oklch(70% 0.144 26.1)",
+          "oklch(82% 0.144 26.1)",
+          "oklch(95% 0.144 26.1)"
+        ]
+      },
+      "notte-bianco-tricolore": {
+        "role": "neutral",
+        "displayName": "Notte · bianco tricolore",
+        "canonical": "#f4f5f0",
+        "oklch": "oklch(96.8% 0.006 110)",
+        "tonalRamp": [
+          "oklch(15% 0.006 110)",
+          "oklch(26% 0.006 110)",
+          "oklch(37% 0.006 110)",
+          "oklch(48% 0.006 110)",
+          "oklch(59% 0.006 110)",
+          "oklch(70% 0.006 110)",
+          "oklch(82% 0.006 110)",
+          "oklch(95% 0.006 110)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Kun kaffedosen på resultatkortet."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Sidens ene H1; 2,25 rem → 3 rem fra 640 px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Seksjonstitler i kort og ordmerket."
+      },
+      "accent-italic": {
+        "displayName": "Accent italic",
+        "purpose": "Handlingslinjen på dosekortet og «Egen»-flisen."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Ingress og løpende tekst."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Flisverdier, tips, forklaringer, bunntekst."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Overlinjer i versaler; feltetiketter bruker 0,1 em sporing."
+      }
+    },
+    "shadows": [
+      {
+        "name": "stille",
+        "value": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "purpose": "Innholdskort, tipskort og vannmengde-fliser."
+      },
+      {
+        "name": "servert",
+        "value": "0 20px 40px -15px rgba(60, 42, 33, 0.2)",
+        "purpose": "Kun dosekortet i lys modus; erstattes av kant i mørk modus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "pour-in",
+        "value": "translateY(6px)→0, opacity 0→1, 0.35s ease-out",
+        "purpose": "Dosen «helles» inn når tallet endres; av ved prefers-reduced-motion."
+      },
+      {
+        "name": "color-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Hover- og tilstandsskifter på fliser, felt og ikonknapp."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Vannmengde-flis",
+      "kind": "chip",
+      "refersTo": "chip-water",
+      "description": "Radioflis for forhåndsvalgt vannmengde; aktiv flis er espresso.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\">0,25 L</button><button class=\"ds-chip ds-chip-active\" aria-pressed=\"true\">0,5 L</button><button class=\"ds-chip\">0,75 L</button><button class=\"ds-chip\">1 L</button><button class=\"ds-chip\">1,25 L</button><button class=\"ds-chip ds-chip-custom\">Egen</button></div>",
+      "css": ".ds-chips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; } .ds-chip { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; display: block; width: 100%; padding: 14px 8px; border-radius: 12px; border: 1px solid var(--border, #d3c3bd); background: var(--surface, #fff); color: var(--foreground, #221a13); font-size: 0.875rem; font-weight: 600; text-align: center; cursor: pointer; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); transition: border-color 150ms cubic-bezier(0.4,0,0.2,1), background-color 150ms cubic-bezier(0.4,0,0.2,1), color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-chip:hover { border-color: var(--foreground, #221a13); } .ds-chip:focus-visible { outline: 2px solid var(--foreground, #221a13); outline-offset: 2px; } .ds-chip-active, .ds-chip-active:hover { background: var(--accent, #3c2a21); border-color: var(--accent, #3c2a21); color: var(--accent-foreground, #fff); } .ds-chip-custom { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; font-style: italic; border-style: dashed; background: transparent; color: var(--muted, #4f4540); box-shadow: none; }"
+    },
+    {
+      "name": "Dosekort",
+      "kind": "card",
+      "refersTo": "card-dose",
+      "description": "Signaturkomponenten: kaffedosen servert på espresso-flate.",
+      "html": "<section class=\"ds-dose\" aria-live=\"polite\"><p class=\"ds-dose-eyebrow\">Anbefalt kaffedose</p><p class=\"ds-dose-value\">30<span>g</span></p><p class=\"ds-dose-action\">Vei opp 30 gram kaffebønner</p><div class=\"ds-dose-rule\"></div><p class=\"ds-dose-basis\">Basert på 0,5 L vann og et forhold på 60 g per liter.</p><p class=\"ds-dose-source\">SCA Golden Cup (55 g/L ± 10 %) · Norsk Kaffeinformasjon (60–70 g/L)</p></section>",
+      "css": ".ds-dose { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; background: var(--hero, #3c2a21); color: var(--hero-foreground, #f5efe6); border-radius: 16px; padding: 48px 24px; text-align: center; box-shadow: 0 20px 40px -15px rgba(60, 42, 33, 0.2); } .ds-dose-eyebrow { margin: 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; } .ds-dose-value { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 12px 0 0; font-size: 4.5rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; animation: ds-pour-in 0.35s ease-out; } .ds-dose-value span { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin-left: 8px; font-size: 1.875rem; font-weight: 400; font-style: italic; } .ds-dose-action { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 12px 0 0; font-size: 1.125rem; font-style: italic; opacity: 0.9; } .ds-dose-rule { margin: 24px auto 0; width: 66%; height: 1px; background: currentColor; opacity: 0.15; } .ds-dose-basis { margin: 20px 0 0; font-size: 0.875rem; opacity: 0.7; } .ds-dose-source { margin: 6px 0 0; font-size: 0.75rem; opacity: 0.6; } @keyframes ds-pour-in { from { transform: translateY(6px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } @media (prefers-reduced-motion: reduce) { .ds-dose-value { animation: none; } }"
+    },
+    {
+      "name": "Innholdskort",
+      "kind": "card",
+      "refersTo": "card-surface",
+      "description": "Hvit kortflate med tittel og ikon, brukt for vannmengde og malingsgrad.",
+      "html": "<section class=\"ds-card\"><h2 class=\"ds-card-title\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3 C12 3 5.5 10.5 5.5 15 a6.5 6.5 0 0 0 13 0 C18.5 10.5 12 3 12 3 Z\"/></svg><span>Vannmengde</span></h2><p class=\"ds-card-body\">Mal bønnene til medium malingsgrad, omtrent som grovt sandkorn.</p></section>",
+      "css": ".ds-card { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; background: var(--surface, #fff); color: var(--foreground, #221a13); border: 1px solid var(--border, #d3c3bd); border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); } .ds-card-title { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; display: flex; align-items: center; gap: 10px; margin: 0; font-size: 1.5rem; line-height: 2rem; font-weight: 600; } .ds-card-title svg { color: var(--muted, #4f4540); flex-shrink: 0; } .ds-card-body { margin: 16px 0 0; font-size: 0.875rem; line-height: 1.6; color: var(--muted, #4f4540); }"
+    },
+    {
+      "name": "Tipskort",
+      "kind": "card",
+      "refersTo": "card-tip",
+      "description": "Justeringsguidens tips; signalfargen bor i ikonsirkelen.",
+      "html": "<div class=\"ds-tips\"><div class=\"ds-tip ds-tip-finer\"><span class=\"ds-tip-icon\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 20 V5 M6 11 l6 -6 6 6\"/></svg></span><div><p class=\"ds-tip-title\">For syrlig smak?</p><p class=\"ds-tip-text\">Mal finere for å øke ekstraksjonen.</p></div></div><div class=\"ds-tip ds-tip-coarser\"><span class=\"ds-tip-icon\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 4 v15 M6 13 l6 6 6 -6\"/></svg></span><div><p class=\"ds-tip-title\">For bitter smak?</p><p class=\"ds-tip-text\">Mal grovere for å redusere ekstraksjonen.</p></div></div></div>",
+      "css": ".ds-tips { display: grid; gap: 12px; } .ds-tip { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; display: flex; align-items: center; gap: 16px; padding: 16px; background: var(--surface, #fff); color: var(--foreground, #221a13); border: 1px solid var(--border, #d3c3bd); border-radius: 12px; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); } .ds-tip-icon { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; flex-shrink: 0; border-radius: 9999px; } .ds-tip-finer .ds-tip-icon { color: var(--basil, #008c45); background: color-mix(in srgb, var(--basil, #008c45) 10%, transparent); } .ds-tip-coarser .ds-tip-icon { color: var(--tomato, #cd212a); background: color-mix(in srgb, var(--tomato, #cd212a) 10%, transparent); } .ds-tip-title { margin: 0; font-size: 0.875rem; font-weight: 600; } .ds-tip-text { margin: 2px 0 0; font-size: 0.875rem; color: var(--muted, #4f4540); }"
+    },
+    {
+      "name": "Understrek-felt",
+      "kind": "input",
+      "refersTo": "input-underline",
+      "description": "Egendefinert vannmengde: kun understrek, pomodoro ved feil.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-liters\">Egendefinert vannmengde</label><div class=\"ds-field-row\"><input id=\"ds-liters\" class=\"ds-input\" inputmode=\"decimal\" value=\"0,6\"><span>liter</span></div><p class=\"ds-field-hint\">Bruk komma eller punktum, f.eks. 0,6.</p></div>",
+      "css": ".ds-field { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; color: var(--foreground, #221a13); } .ds-field-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted, #4f4540); } .ds-field-row { display: flex; align-items: baseline; gap: 8px; margin-top: 4px; } .ds-field-row span, .ds-field-hint { font-size: 0.875rem; color: var(--muted, #4f4540); } .ds-input { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; width: 112px; padding: 6px 4px; font-size: 1.125rem; color: inherit; background: transparent; border: 0; border-bottom: 1px solid var(--border, #d3c3bd); outline: none; transition: border-color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-input:focus { border-bottom-color: var(--foreground, #221a13); } .ds-input[aria-invalid=\"true\"] { border-bottom-color: var(--tomato, #cd212a); } .ds-field-hint { margin: 6px 0 0; }"
+    },
+    {
+      "name": "Ikonknapp",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "Sirkulær temavelger i headeren.",
+      "html": "<button class=\"ds-icon-btn\" aria-label=\"Bytt til mørkt tema\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z\"/></svg></button>",
+      "css": ".ds-icon-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 9999px; background: transparent; color: var(--muted, #4f4540); cursor: pointer; transition: background-color 150ms cubic-bezier(0.4,0,0.2,1), color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-icon-btn:hover { background: var(--surface-muted, #f7e5d9); color: var(--foreground, #221a13); } .ds-icon-btn:focus-visible { outline: 2px solid var(--foreground, #221a13); outline-offset: 2px; }"
+    },
+    {
+      "name": "Header med tricolore",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Ordmerke, temaknapp og 3 px tricolore-stripe — systemets eneste dekor.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-header-row\"><p class=\"ds-wordmark\">L'Arte della Dose</p><button class=\"ds-icon-btn\" aria-label=\"Bytt til mørkt tema\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z\"/></svg></button></div><div class=\"ds-tricolore\" aria-hidden=\"true\"></div></header>",
+      "css": ".ds-header { border-bottom: 1px solid color-mix(in srgb, var(--border, #d3c3bd) 60%, transparent); } .ds-header-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; } .ds-wordmark { font-family: var(--font-bodoni-moda), 'Bodoni Moda', Georgia, serif; margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; color: var(--foreground, #221a13); } .ds-tricolore { height: 3px; background: linear-gradient(90deg, #008c45 0% 33.3%, #e6ddd0 33.3% 66.6%, #cd212a 66.6% 100%); } .ds-icon-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 9999px; background: transparent; color: var(--muted, #4f4540); cursor: pointer; transition: background-color 150ms cubic-bezier(0.4,0,0.2,1), color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-icon-btn:hover { background: var(--surface-muted, #f7e5d9); color: var(--foreground, #221a13); } .ds-icon-btn:focus-visible { outline: 2px solid var(--foreground, #221a13); outline-offset: 2px; }"
+    },
+    {
+      "name": "Malingsskala",
+      "kind": "custom",
+      "refersTo": "grind-scale",
+      "description": "Passiv fin–medium–grov-skala med håndtak på medium.",
+      "html": "<div class=\"ds-scale\" aria-hidden=\"true\"><div class=\"ds-scale-track\"><div class=\"ds-scale-fill\"></div><div class=\"ds-scale-knob\"></div></div><div class=\"ds-scale-labels\"><span>Fin</span><span>Medium</span><span>Grov</span></div></div>",
+      "css": ".ds-scale { font-family: var(--font-hanken-grotesk), 'Hanken Grotesk', system-ui, sans-serif; } .ds-scale-track { position: relative; height: 6px; border-radius: 9999px; background: var(--surface-muted, #f7e5d9); } .ds-scale-fill { position: absolute; inset: 0 50% 0 0; border-radius: 9999px; background: color-mix(in srgb, var(--foreground, #221a13) 60%, transparent); } .ds-scale-knob { position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; transform: translate(-50%, -50%); border-radius: 9999px; border: 2px solid var(--surface, #fff); background: var(--foreground, #221a13); } .ds-scale-labels { display: flex; justify-content: space-between; margin-top: 8px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted, #4f4540); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Il Banco del Barista",
+    "overview": "Grensesnittet er baristaens disk. Det er en rolig, ryddig arbeidsflate der ett presist svar blir satt frem for gjesten. Brukeren står ved sin egen kjøkkenbenk med vekt og kvern. Appen tar baristaens plass: den stiller ett spørsmål (hvor mye vann?), serverer ett tall (så mange gram bønner) og gir to råd til neste kopp. Alt på disken har en funksjon. Ingenting er pynt.\n\nStemningen er varm og håndverksmessig uten å være nostalgisk. Kremhvite og latte-fargede flater fungerer som porselen og marmor. Espresso-brunt er den eneste tunge fargen, og den er forbeholdt det som er viktigst: dosen og det aktive valget. Bodoni Modas høye kontrast gir tallet tyngde og tradisjon. Hanken Grotesk tar seg av det praktiske. Tetthet er lav, og det er god luft mellom seksjonene. Én kolonne holder blikket i én retning, fra spørsmål til svar.\n\nSystemet skal aldri minne om en kjedekafé-app. Det betyr ingen bonuskort-estetikk, ingen produktbilder av drikke, ingen grelle kampanjefarger og ingen salgsflater. Dette er en disk, ikke en butikk.",
+    "keyCharacteristics": [
+      "Én kolonne, sentrert, maks 800 px. Spørsmål → svar → råd.",
+      "Espresso-brunt resultatkort som den eneste mørke flaten i lys modus.",
+      "Bodoni Moda for tall og overskrifter, med kursiv som varm aksent.",
+      "Taktile, rolige flater med myke hjørner og stille skygger.",
+      "Tricolore bare som signatur (en 3 px stripe) og funksjonelt signal.",
+      "Full lys og mørk modus (crema og notte) med de samme rollene."
+    ],
+    "rules": [
+      {
+        "name": "The Una Tazza Rule",
+        "body": "Espresso er forbeholdt dosen og det aktive valget. Hvis en tredje ting på skjermen blir espresso-brun, taper tallet sin plass.",
+        "section": "colors"
+      },
+      {
+        "name": "The Segnale Rule",
+        "body": "Basilico og pomodoro er signaler, ikke dekor. De betyr alltid «finere/grovere» eller «feil», og ellers vises de bare i tricolore-stripen. Den eneste tonede flaten er 10 %-sirkelen bak et signalikon. Grønt og rødt brukes aldri som kortflater, kanter på kort, knappebakgrunner eller illustrasjonsfarge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif Serves Rule",
+        "body": "Bodoni brukes bare til tall, overskrifter og den ene handlingslinjen, altså det som serveres. Knapper, etiketter, hint og feilmeldinger settes i Hanken Grotesk.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ingen Overlinje Rule",
+        "body": "Overskrifter står alene. Ingen kicker eller overlinje over H1 eller korttitler. Label brukes som etikett for en verdi eller som selve seksjonstittelen, aldri som forspill til en annen overskrift.",
+        "section": "typography"
+      },
+      {
+        "name": "The Corsivo Rule",
+        "body": "Kursiv Bodoni er krydder og brukes på maks ett–to elementer per skjerm: enheten ved tallet, handlingslinjen og «Egen». Den brukes aldri på brødtekst.",
+        "section": "typography"
+      },
+      {
+        "name": "The Én Retning Rule",
+        "body": "Layouten er én kolonne i fast rekkefølge, også på desktop. Ingen sidekolonner, ingen rutenett av kort og ingen omstokking. Blikket går fra spørsmål til svar.",
+        "section": "layout"
+      },
+      {
+        "name": "The Én Løftet Rule",
+        "body": "Bare dosen får den dype skyggen. Alle andre flater ligger stille på disken.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do la kaffedosen være det største og tyngste på skjermen (Display, 4,5 rem, espresso-kort).",
+      "Do bruke tokenparene (`--background`, `--surface`, `--foreground` osv.) slik at alt fungerer i både crema og notte uten egne overstyringer.",
+      "Do gi alle interaktive elementer en 2 px ristretto-fokusring med 2 px avstand.",
+      "Do bruke cappuccino-kant pluss stille skygge på alle kort og fliser, og 16 px / 12 px radius etter nivå.",
+      "Do sette overlinjer og små funksjonelle titler i Label med versaler og 0,15 em sporing.",
+      "Do respektere `prefers-reduced-motion` for all bevegelse.",
+      "Do tematisere nettleserflatene: tekstmarkering i espresso (lys) eller lys foreground (mørk), markør i foreground, `color-scheme` per tema og `theme-color` som følger sidebakgrunnen."
+    ],
+    "donts": [
+      "Don't la systemet ligne en kjedekafé-app: ingen bonuskort-estetikk, ingen produktbilder av drikke, ingen grelle kampanjefarger og ingen salgsflater.",
+      "Don't bruke espresso-brunt på mer enn dosen og det aktive valget (The Una Tazza Rule).",
+      "Don't bruke basilico eller pomodoro som flate, knappebakgrunn eller dekor. De er signaler (The Segnale Rule).",
+      "Don't gjenta tricolore-stripen andre steder enn under headeren.",
+      "Don't gi andre flater enn resultatkortet den dype Servert-skyggen.",
+      "Don't bryte opp enkolonne-layouten til sidekolonner eller kortrutenett på store skjermer.",
+      "Don't sette knapper, etiketter eller feilmeldinger i Bodoni.",
+      "Don't sette en overlinje over en overskrift (The Ingen Overlinje Rule).",
+      "Don't gi kort en tykk farget venstre- eller høyrekant. Signalfarge bor i ikonet."
+    ]
+  }
+}

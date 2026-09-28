@@ -46,7 +46,7 @@ export default function Calculator() {
           onCustomTextChange={changeCustomText}
         />
       </div>
-      <ResultCard grams={calculateGrams(liters)} />
+      <ResultCard grams={calculateGrams(liters)} liters={liters} />
       <GrindSection />
       <AdjustmentGuide />
     </div>

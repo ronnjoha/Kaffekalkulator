@@ -1,13 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+// Temaet bor i `dark`-klassen på <html> (satt av init-scriptet i layout).
+function subscribe(onChange: () => void) {
+  const observer = new MutationObserver(onChange);
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["class"],
+  });
+  return () => observer.disconnect();
+}
+
+const getIsDark = () => document.documentElement.classList.contains("dark");
+// På serveren er temaet ukjent; ikonet vises først etter hydrering.
+const getServerIsDark = () => null;
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
-  }, []);
+  const isDark = useSyncExternalStore(subscribe, getIsDark, getServerIsDark);
 
   function toggle() {
     const next = !isDark;
@@ -17,7 +27,6 @@ export default function ThemeToggle() {
     } catch {
       // localStorage kan være utilgjengelig (f.eks. privat modus)
     }
-    setIsDark(next);
   }
 
   return (
@@ -25,7 +34,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={isDark ? "Bytt til lyst tema" : "Bytt til mørkt tema"}
-      className="flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+      className="flex h-11 w-11 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
     >
       {isDark === null ? (
         <span className="h-5 w-5" aria-hidden />

@@ -100,7 +100,11 @@ export default function WaterSelector({
               onChange={(e) => onCustomTextChange(e.target.value)}
               aria-invalid={customInvalid}
               aria-describedby="custom-liters-hint"
-              className="w-28 border-b bg-transparent px-1 py-1.5 text-lg text-foreground outline-none transition-colors border-border-soft focus:border-foreground aria-[invalid=true]:border-tomato"
+              className={`w-28 border-b bg-transparent px-1 py-1.5 text-lg text-foreground outline-none transition-colors ${
+                customInvalid
+                  ? "border-tomato"
+                  : "border-border-soft focus:border-foreground"
+              }`}
             />
             <span className="text-sm text-muted">liter</span>
           </div>

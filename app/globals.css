@@ -16,6 +16,9 @@
   --accent-foreground: #ffffff;
   --basil: #008c45;
   --tomato: #cd212a;
+  /* Hvitt felt i tricoloren; varmere og mørkere i lys modus så det ikke forsvinner mot crema */
+  --tricolore-bianco: #e6ddd0;
+  color-scheme: light;
 }
 
 .dark {
@@ -32,6 +35,8 @@
   --accent-foreground: #3c2d23;
   --basil: #4fbf7e;
   --tomato: #ff8a80;
+  --tricolore-bianco: #f4f5f0;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -55,6 +60,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  caret-color: var(--foreground);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
 }
 
 /* Italiensk tricolore-aksent (3 px, jf. designsystemets .italian-accent) */
@@ -62,7 +73,7 @@ body {
   background: linear-gradient(
     90deg,
     #008c45 0% 33.3%,
-    #f4f5f0 33.3% 66.6%,
+    var(--tricolore-bianco) 33.3% 66.6%,
     #cd212a 66.6% 100%
   );
 }

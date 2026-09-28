@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bodoni_Moda, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   title: "L'Arte della Dose — Kaffekalkulator",
   description:
     "Velg vannmengde, så viser vi anbefalt mengde kaffebønner i gram — med anbefalt malingsgrad for filterkaffe.",
+};
+
+// Nettleserens verktøylinje på mobil følger sidebakgrunnen (crema / notte).
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fff8f5" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a120b" },
+  ],
 };
 
 const themeInitScript = `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;if(d)document.documentElement.classList.add("dark")}catch(e){}})()`;
